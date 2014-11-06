@@ -1,5 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe "static_pages/help.html.erb", :type => :view do
-  pending "add some examples to (or delete) #{__FILE__}"
-end
+
+# NOte that I commented it out below!
+
+# RSpec.describe "static_pages/help.html.erb", :type => :view do
+#   pending "add some examples to (or delete) #{__FILE__}"
+# end
