@@ -1,2 +1,8 @@
-<h1>Recipes#index</h1>
-<p>Find me in app/views/recipes/index.html.erb</p>
+<h2>Espresso Recipes</h2>
+
+<!--This will list all the recipes  -->
+<% @recipes.collect do |recipe| %>
+  <%= link_to "#{recipe.name}", recipe %>
+  <br>
+  <!-- <%= recipe.name %><br> -->
+<% end %>

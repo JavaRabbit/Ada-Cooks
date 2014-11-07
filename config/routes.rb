@@ -4,6 +4,11 @@ Rails.application.routes.draw do
   get 'static_pages/help'
 
   get 'recipes/index'
+  get "/recipes/:id",   to: "recipes#show",  as: :recipe
+
+
+  #this will route to the homepage
+  root "recipes#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
