@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/help'
 
-  get 'recipes/index'
+  get 'recipes/index', to: "recipe#index", as: :index
   get "/recipes/:id",   to: "recipes#show",  as: :recipe
 
 
