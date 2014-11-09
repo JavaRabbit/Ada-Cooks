@@ -5,7 +5,7 @@ require 'rails_helper'
 # end
 
 
-#  this is a test of the recipe route that it will get "recipe#index"
+#  this is a test of the recipe route: it will get "recipe#index"
 # this test did not work due to Rspec 2.x  changing to 3.x, see
 # http://stackoverflow.com/questions/6296235/undefined-method-get-for-rspeccoreexamplegroupnested-10x00000106db51f
 
@@ -21,6 +21,12 @@ describe RecipesController, :type => :controller do
   it "renders the :index view" do
      get :index
     response.should render_template :index
+  end
+
+  
+  it "renders the :new view" do
+    get :new
+    response.should render_template :new
   end
 
 end

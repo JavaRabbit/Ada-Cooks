@@ -1,11 +1,20 @@
 Rails.application.routes.draw do
+  get 'users/new'
+
   get 'static_pages/home'
 
   get 'static_pages/help'
 
-  get 'recipes/index', to: "recipe#index", as: :index
-  get "/recipes/:id",   to: "recipes#show",  as: :recipe
+  get 'recipes/index',    to: "recipe#index", as: :index
+  get "/recipes/:id",     to: "recipes#show",  as: :recipe
+  delete "/recipes/:id",  to: "recipes#delete"
 
+  # please check why path below works
+  get 'new'  => 'recipes#new'
+  # get "/recipes/new",     to: "recipes#new"
+
+
+  get 'signup'  => 'users#new'
 
   #this will route to the homepage
   root "recipes#index"

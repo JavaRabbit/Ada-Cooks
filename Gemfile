@@ -29,6 +29,7 @@ gem 'spring',        group: :development
 
 gem 'rspec-rails', '~>3.0.0'
 gem 'minitest'
+gem 'bootstrap-sass'
 
 #  gem 'selenium-webdriver', '2.35.1'
 #  gem 'capybara', '2.2.0'

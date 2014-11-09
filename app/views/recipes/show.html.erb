@@ -1,1 +1,7 @@
-This is the recipes show page
+
+  <tr>
+    <td><%= @recipe.name %></td><br>
+    Directions: <br>
+    <td><%= @recipe.directions %></td><br>
+    <td><%= link_to 'Destroy', @recipe, method: :delete %></td>
+  </tr>
