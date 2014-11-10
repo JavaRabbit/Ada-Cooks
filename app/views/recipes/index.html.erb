@@ -7,8 +7,11 @@
   <!-- <%= recipe.name %><br> -->
 <% end %>
 <br>
-<%= link_to "Create a new recipe", new_path %>
+<%= link_to "Create a new recipe", new_path, class: "btn btn-lg btn-primary" %>
 
+<br><br>
+
+<%= link_to "View all ingredients", ingredient_path, class: "btn btn-lg btn-primary" %>
 <br><br>
 
 <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>

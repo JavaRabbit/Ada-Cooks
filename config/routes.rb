@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  resources :users
+
   get 'users/new'
 
   get 'static_pages/home'
@@ -8,6 +11,8 @@ Rails.application.routes.draw do
   get 'recipes/index',    to: "recipe#index", as: :index
   get "/recipes/:id",     to: "recipes#show",  as: :recipe
   delete "/recipes/:id",  to: "recipes#delete"
+
+  get "ingredients/index",  to: "ingredients#index", as: :ingredient
 
   # please check why path below works
   get 'new'  => 'recipes#new'

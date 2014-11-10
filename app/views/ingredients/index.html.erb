@@ -1,0 +1,5 @@
+<% @ingredients.collect do |ingredient| %>
+  <%= link_to "#{ingredient.name}", ingredient %>
+  <br>
+  
+<% end %>
